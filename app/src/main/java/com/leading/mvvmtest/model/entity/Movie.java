@@ -121,6 +121,13 @@ public class Movie {
         public void setAverage(float average) {
             this.average = average;
         }
+
+        @Override
+        public String toString() {
+            return "Rating{" +
+                    "average=" + average +
+                    '}';
+        }
     }
 
     private class Cast {
@@ -194,6 +201,15 @@ public class Movie {
 
         public void setLarge(String large) {
             this.large = large;
+        }
+
+        @Override
+        public String toString() {
+            return "Avatars{" +
+                    "small='" + small + '\'' +
+                    ", medium='" + medium + '\'' +
+                    ", large='" + large + '\'' +
+                    '}';
         }
     }
 }
